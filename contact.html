@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./assets/images/icon.png" type="image/icon type">
+    <title>Contact Me</title>
 </head>
 <body>
     <hr>
-    <a href="index.html">Home</a>|
-    <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="gallery.html">Gallery</a>
     <hr>
-    <h3>Contact me with the following information</h3>
-    <form action="mailto:se.hanan.miftah@gmail.com" method="POST" enctype="utf-8">
-        <label for="name">First Name: </label><br>
-        <input type="text" name="fName" id="fName" required><br>
-        <label for="name">Last Name</label><br>
-        <input type="text" name="lName" id="fName" required><br>
-        <label for="email">Email: </label><br>
-        <input type="email" name="email" id="email" required><br>
-        Leave your comment here..<br>
-        <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
-        <input type="submit" value="Submit"><br>
-    </form>
+    <table>
+        <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.218523478972!2d38.75900921445855!3d9.043821091247562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f68908aad97%3A0x6c67d2e35cbb4d62!2s6%20Kilo!5e0!3m2!1sen!2set!4v1583146393296!5m2!1sen!2set" 
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+            <td><table>
+                <form action="mailto:se.hanan.miftah@gmail.com" method="POST" enctype="utf-8">
+                    <th><h3>Contact me with the following information</h3></th>
+                    <tr>
+                        <td><label for="name">First Name: </label>&nbsp;</td>
+                        <td><input type="text" name="fName" id="fName" required pattern="[A-Za-z]"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Last Name</label>&nbsp;</td>
+                        <td><input type="text" name="lName" id="fName" required pattern="[A-Za-z]"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email: </label>&nbsp;</td>
+                        <td><input type="email" name="email" id="email" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td>Leave your comment here..<br></td>
+                        <td><textarea name="comment" id="comment" cols="30" rows="10"></textarea><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Submit"><br></td>
+                    </tr>
+                </form>
+            </table></td>
+        </tr>
+    </table>
+    
+
 </body>
 </html>
