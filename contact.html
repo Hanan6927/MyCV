@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/icon.png" type="image/icon type">
+    <link rel="icon" href="./assets/images/logo.jpg" type="image/icon type">
     <title>Contact Me</title>
 </head>
 <body>
     <hr>
-    <a href="index.html">Home</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="gallery.html">Gallery</a>
+    <p align="center">
+        <a href="index.html"><img src="./assets/images/logo.jpg" alt="logo" align="left" width="50px" 
+            height="40px"></a>
+        <a href="index.html" style="text-decoration: none;">Home</a> |
+        <a href="contact.html" style="text-decoration: none;">Contact</a> |
+        <a href="gallery.html" style="text-decoration: none;">Gallery</a>
+        </p>
     <hr>
     <table cellspacing="10">
         <tr>
             <td>
-    <img src="./assets/images/me2.jpg" alt="Hanan Miftah Profile Image" width="200" height="200">
+                <a href="gallery.html"><img src="./assets/images/me2.jpg" alt="Hanan Miftah Profile Image" 
+                    width="200" height="200"></a>
     </td>
     <td>
     <h1>Hanan Miftah</h1>
     <h3>Student, Addis Ababa Institute of Technology</h3>
     <p>Hi there!</p>
-    <p>I am Hanan Miftah, second year software engineering student in Addis Ababa 
+    <p title="A little introduction about me">I am Hanan Miftah, second year software engineering student in Addis Ababa 
         institute of technology. Experienced with all stages of the 
         development cycle for dynamic web projects. Well-versed in 
         numerous programming languages including HTML5, PHP OOP, 
@@ -38,11 +43,11 @@
                     <th><h3>Contact me with the following information</h3></th>
                     <tr>
                         <td><label for="name">First Name: </label>&nbsp;</td>
-                        <td><input type="text" name="fName" id="fName" required pattern="[A-Za-z]"><br><br></td>
+                        <td><input type="text" name="fName" id="fName" required pattern="^[A-Za-z]+$"><br><br></td>
                     </tr>
                     <tr>
                         <td><label for="name">Last Name</label>&nbsp;</td>
-                        <td><input type="text" name="lName" id="fName" required pattern="[A-Za-z]"><br><br></td>
+                        <td><input type="text" name="lName" id="fName" required pattern="^[A-Za-z]+$"><br><br></td>
                     </tr>
                     <tr>
                         <td><label for="email">Email: </label>&nbsp;</td>
@@ -55,7 +60,7 @@
                                 <option value="asia">Asia</option>
                                 <option value="africa">Africa</option>
                                 <option value="america">America</option>
-                            </select>
+                            </select><br><br>
                         </td>
                     </tr>
                     <tr>
@@ -63,7 +68,8 @@
                             <label>Password: </label>
                         </td>
                         <td>
-                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="your password should have 
+                            lowercase letters, numbers and atleast 8 character"><br><br>
                         </td>
                     </tr>
                     <tr>
@@ -75,7 +81,6 @@
                     </tr>
                     
                 </form>
-                <hr>
             </table></td>
         </tr>
     </table>
