@@ -1,0 +1,382 @@
+#india{
+    margin-left: 80px;
+    float: left;
+    box-shadow: 1px 3px 3px 4px;
+}
+#india li{
+    width: 100%;
+    list-style-type: none;
+    height: 100px;
+}
+#india li:nth-child(1){
+    background-color: #ff9933;
+}
+#india li:nth-child(2){
+    background-color: #ffffff;
+}
+#india li:nth-child(3){
+    background-color: #138800;
+}.flip-card {
+    
+    background-color: transparent;
+    width: 40%;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  #circle{
+    width: 90px;
+    height: 90px;
+    border: 3px solid #0000ff;
+    border-radius: 50%;
+    margin: 2px auto;
+  }
+  #circle div{
+      position: relative;
+      width: 90px;
+      border: 1px solid #0000ff;
+  }
+  #div1{
+      top: 45px;
+  }
+  #div2{
+      top: 43px;
+      transform: rotate(90deg);
+  }
+  #div3{
+    top: 41px;
+    transform: rotate(15deg);
+}
+#div4{
+    top: 39px;
+    transform: rotate(30deg);
+}
+#div5{
+    top: 37px;
+    transform: rotate(45deg);
+}
+#div6{
+    top: 35px;
+    transform: rotate(60deg);
+}
+#div7{
+    top: 33px;
+    transform: rotate(75deg);
+}
+#div8{
+    top: 31px;
+    transform: rotate(-15deg);
+}
+#div9{
+    top: 29px;
+    transform: rotate(-30deg);
+}
+#div10{
+    top: 27px;
+    transform: rotate(-45deg);
+}
+#div11{
+    top: 25px;
+    transform: rotate(-60deg);
+}
+#div12{
+    top: 23px;
+    transform: rotate(-75deg);
+}
+#bangladesh{
+    margin-left: 700px;
+    box-shadow: 1px 3px 3px 4px;
+}
+.sabuj_area{
+    width: 100%;
+    background-color: green;
+    height: 100%;
+}
+.red_circle{
+    position: relative;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    background-color: red;
+    top: 70px;
+    left: 200px;
+}
+#netherland{
+    margin-left: 80px;
+    margin-top: 30px;
+    box-shadow: 1px 3px 3px 4px;
+    float: left;
+}
+#netherland li{
+    width: 100%;
+    list-style-type: none;
+    height: 100px;
+}
+#netherland li:nth-child(1){
+    background-color: #AE1C28;
+}
+#netherland li:nth-child(2){
+    background-color: #ffffff;
+}
+#netherland li:nth-child(3){
+    background-color: #214688;
+}
+#japan{
+    margin-left: 700px;
+    margin-top: 30px;
+    box-shadow: 1px 3px 3px 4px;
+}
+.rectangle{
+    width: 100%;
+    background-color: white;
+    height: 100%;
+}
+.jap_circle{
+    position: relative;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    background-color: red;
+    top: 70px;
+    left: 200px;
+}
+#france{
+    margin-left: 80px;
+    float: left;
+    margin-top: 30px;
+    box-shadow: 1px 3px 3px 4px;
+}
+.f_flag{
+    background-color: white;
+    position: relative;
+}
+.f_flag:nth-child(1){
+    width: 33.3%;
+    height: 100%;
+    background-color: #0055A4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#t{
+    margin-left: 355px;
+    width: 100%;
+    height: 100%;
+    background-color:#EF4135;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+#finnland{
+    margin-top: 30px;
+    box-shadow: 1px 3px 3px 4px;
+    margin-left: 700px;
+}
+#finnland li{
+    width: 100%;
+    list-style-type: none;
+    height: 100px;
+}
+#finnland li:nth-child(1){
+    background-color: white;
+}
+#finnland li:nth-child(2){
+    background-color: blue;
+}
+#finnland li:nth-child(3){
+    background-color: white;
+}
+.t{
+    margin-left: 140px;
+    width: 18%;
+    height: 100%;
+    background-color:blue;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+#benin{
+    box-shadow: 1px 3px 3px 4px;
+    margin-top: 30px;
+    margin-left: 80px;
+    float: left;
+}
+#benin li{
+    width: 100%;
+    list-style-type: none;
+    height: 150px;
+}
+#benin li:nth-child(1){
+    background-color: yellow;
+}
+#benin li:nth-child(2){
+    background-color: red;
+}
+.benin_t{
+    width: 30%;
+    height: 100%;
+    background-color:green;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+#botswana{
+    box-shadow: 1px 3px 3px 4px;
+    margin-top: 30px;
+    margin-left: 700px;
+}
+#botswana li{
+    width: 100%;
+    list-style-type: none;
+    height: 117px;
+}
+#botswana li:nth-child(1){
+    background-color: #75aadb;
+}
+#botswana li:nth-child(2){
+    height: 50px;
+    margin: 8px 0;
+    background-color: black;
+}
+#botswana li:nth-child(3){
+    background-color: #75aadb;
+}
+#nigeria{
+    box-shadow: 1px 3px 3px 4px;
+    margin-top: 30px;
+    margin-left: 80px;
+    float: left;
+}
+#nig_1{
+    width: 33.3%;
+    height: 100%;
+    background-color: #008753;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#nig_3{
+    width: 33.3%;
+    height: 100%;
+    background-color: #008753;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#mali{
+    box-shadow: 1px 3px 3px 4px;
+    margin-top: 30px;
+    margin-left: 700px;
+}
+#mali_1{
+    width: 33.3%;
+    height: 100%;
+    background-color: #14B53A;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#mali_2{
+    width: 33.4%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 33.3%;
+    right: 33.3%;
+    background-color: #fcd116;
+}
+#mali_3{
+    width: 33.3%;
+    height: 100%;
+    background-color: #ce1126;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#guinea{
+    box-shadow: 1px 3px 3px 4px;
+    margin-top: 30px;
+    margin-left: 80px;
+    float: left;
+}
+#gui_1{
+    width: 33.3%;
+    height: 100%;
+    background-color: #ce1126;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#gui_2{
+    width: 33.4%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 33.3%;
+    right: 33.3%;
+    background-color: #fcd116;
+}
+#gui_3{
+    width: 33.3%;
+    height: 100%;
+    background-color: #14B53A;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#niger{
+    box-shadow: 1px 3px 3px 4px;
+    margin-top: 30px;
+    margin-left: 700px;
+}
+#niger li{
+    width: 100%;
+    list-style-type: none;
+    height: 100px;
+}
+#niger li:nth-child(1){
+    background-color: #e05206;
+}
+#niger li:nth-child(2){
+    background-color: #ffffff;
+}
+#niger li:nth-child(3){
+    background-color: #0db02b;
+}
+#nig_circle{
+    background-color: #e05206;
+    width: 90px;
+    height: 90px;
+    border: 3px solid #e05206;
+    border-radius: 50%;
+    margin: 2px auto;
+}
