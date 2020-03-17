@@ -9,87 +9,118 @@
 </head>
 <body>
     <!-- This is the first step -->
-    <p align="center" class="p1" id="p1">
-        <a href="index.html"><img src="./assets/images/logo.jpg" alt="logo" align="left" width="50px" 
-            height="40px"></a>
-    <a href="index.html" style="text-decoration: none;">Home</a> |
-    <a href="contact.html" style="text-decoration: none;">Contact</a> |
-    <a href="gallery.html" style="text-decoration: none;">Gallery</a>
-    </p>
-    <a href="gallery.html"><img src="./assets/images/me2.jpg" alt="Hanan Miftah Profile Image" 
-                    width="200" height="200"></a>
-    <h1>Hanan Miftah</h1>
-    <h3>Student, Addis Ababa Institute of Technology</h3>
-    <p>Hi there!</p>
-    <p title="A little introduction about me" class="p1">I am Hanan Miftah, second year software engineering student in Addis Ababa 
-        institute of technology. Experienced with all stages of the 
-        development cycle for dynamic web projects. Well-versed in 
-        numerous programming languages including HTML5, PHP OOP, 
-        JavaScript, CSS, MySQL. </p>
-
-    <h3>Hobbies and Interest</h3>
-    <ul class="p1">
-        <li>
-            Sport: I like to watch and play
-            <ul>
-                <li>
-                    Football: Fun of Barcelona
-                </li>
-                <li>
-                    Tennis: Fun of Novac joko
-                </li>
-                <li>
-                    Athletics
-                </li>
-            </ul>
-        </li>
-        
-        <li>
-            Movies: I like watching Movies like
-            <ul class="uls">
-                <li>
-                    Scientific fiction
-                </li>
-                <li>
-                    Programming 
-                </li>
-                <li>Movies that interest me a lot
-                <ul>
-                    <li>Silicon Valley</li>
-                    <li>AI Rising</li>
-                    <li>Hob lilijar</li>
-                </ul>
-            </li>
-            </ul>
-        </li>
-    </ul>
     
-    <h3>Work Experiance</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>Date</td>
-            <td>Job Title</td>
-        </tr>
-        <tr>
-            <td>7/2018 to Now</td>
-            <td>Web Developer</td>
-        </tr>
-        <tr>
-            <td>3/2019 to Now</td>
-            <td>IT Operation Assistant</td>
-        </tr>
-    </table>
-    <h3 id="p1">Top Skills</h3>
-    <table cellspacing="10">
-        <tr>
-            <td> Java for Web and Android</td>
-            <td>😍😍😍😍😍</td>
-        </tr>
-        <tr>
-            <td>HTML, CSS and JavaScript</td>
-            <td>😊😊😊😊😊</td>
-        </tr>
-    </table>
-    <p align="center" class="p1">Developed By Hanan Miftah @copy;2020</p>
+        <header>
+            <nav class="nav">
+                <label for="toggle" id="burger">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="myworks.html">My Works</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container1">
+            <div style="flex: 1;">
+                <a href="gallery.html"><img src="./assets/images/me2.jpg" alt="Hanan Miftah Profile Image" 
+                    width="200" height="200" style="float: left; margin-right: 20px; border-radius: 50%;"></a>
+            </div>
+            <div style="flex:6">
+                <h1>Hanan Miftah</h1>
+                <h3>Student, Addiss Ababa Institute of Technology</h3>
+                <p>Hi there!</p>
+                <p title="A little introduction about me" class="p1">I am Hanan Miftah, second year software engineering student in Addis Ababa 
+                    institute of technology. Experienced with all stages of the 
+                    development cycle for dynamic web projects. Well-versed in 
+                    numerous programming languages including HTML5, PHP OOP, 
+                    JavaScript, CSS, MySQL. </p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="box1">
+                <h3 style="clear: left; margin-top: 10px;">Hobbies and Interest</h3>
+                <ul class="p1">
+                    <li>
+                        Sport: I like to watch and play
+                        <ul>
+                            <li>
+                                Football: Fun of Barcelona
+                            </li>
+                            <li>
+                                Tennis: Fun of Novac joko
+                            </li>
+                            <li>
+                                Athletics
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        Movies: I like watching Movies like
+                        <ul class="uls">
+                            <li>
+                                Scientific fiction
+                            </li>
+                            <li>
+                                Programming 
+                            </li>
+                            <li>Movies that interest me a lot
+                            <ul>
+                                <li>Silicon Valley</li>
+                                <li>AI Rising</li>
+                                <li>Hob lilijar</li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="box2">
+                <h3>Work Experiance</h3>
+                <table cellspacing="10">
+                    <tr>
+                        <td>Date</td>
+                        <td>Job Title</td>
+                    </tr>
+                    <tr>
+                        <td>7/2018 to Now</td>
+                        <td>Web Developer</td>
+                    </tr>
+                    <tr>
+                        <td>3/2019 to Now</td>
+                        <td>IT Operation Assistant</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box3">
+                <h3 id="p1">Top Skills</h3>
+                <table cellspacing="10">
+                    <tr>
+                        <td> Java for Web and Android</td>
+                        <td>😍😍😍😍😍</td>
+                    </tr>
+                    <tr>
+                        <td>HTML, CSS and JavaScript</td>
+                        <td>😊😊😊😊😊</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p align="center" class="p1">Developed By Hanan Miftah @copy;2020</p>   
 </body>
 </html>

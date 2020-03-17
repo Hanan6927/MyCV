@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <label for="toggle" id="burger">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="myworks.html">My Works</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <div class="card">
+        <div class="content">
+            <section>
+            <p class="title">
+                Explain in detail(in technical terms) the specific changes in css3
+            </p>
+            <article>
+                <p>The latest version of Cascade Style Sheets, CSS 3, was developed to make Web design easier but it
+                    became a hot topic for a while because not all browsers supported it. However, trends change 
+                    quickly in technology and all browser makers currently are implementing complete CSS 3 support. The major changes in CSS3
+                    are like the following...
+               </p>
+               <h2>1. CSS Selectors</h2>
+               <p>
+                In addition to the selectors that were available in CSS2, CSS 3 introduces some new selectors. 
+                Using these selectors you can choose DOM elements based on their attributes. So you don't need to 
+                specify classes and IDs for every element. Instead, you can utilize the attribute field to style them.
+               </p>
+               <p>
+                The most useful attributes for selectors are:
+               </p>
+               <li>
+                [attr^=val] Â- matches a DOM element with the attribute attr and a value starting with val
+               </li>
+               <li>
+                [attr$=val] Â- matches a DOM element with the attribute attr and a value ending with the suffix val
+               </li>
+               <li>
+                [attr*=val] Â- matches a DOM element with the attribute attr and a value containing the substring val
+               </li>
+               <h3>CSS</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;&lt;style&gt;<br />
+                p[title^=&quot;car&quot;] {color: red;}<br />
+                img[src*=&quot;birth&quot;] {border:3px solid green;}<br />
+               &lt;/style&gt;&lt;/div&gt;
+               </textarea>
+               <h3>HTML</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;&lt;img src=&quot;happy_birthdays.jpg&quot; /&gt;<br />
+                &lt;p title=&quot;container&quot;&gt;I am displaying a container. And this attribute won't match me. &lt;/p&gt;<br />
+                &lt;p title=&quot;carousel&quot;&gt;This carousel will match&lt;/p&gt;&lt;/div&gt;
+               </textarea>
+               <h2>2. CSS3 Rounded Corners</h2>
+               <p>Rounded corner elements can spruce up a website, but creating a rounded corner requires a designer to write a 
+                   lot of code. Adjusting the height, width and positioning of these elements is a never-ending chore 
+                   because any change in content can break them.</p>
+                <p>
+                    CSS 3 addresses this problem by introducing the border-radius property, which gives you the same 
+                    rounded-corner effect and you don't have to write all the code. Here are examples for displaying 
+                    rounded corners in different places of a website.
+                </p>
+                <h3>CSS</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;  .box{ border: 2px solid orange; border-radius : 25px; 
+                    width: 100px; padding: 10px; text-align:center;  }&lt;/div&gt;
+               </textarea>
+               <h3>HTML</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;box&quot;&gt;Submit&lt;/div&gt;&lt;/div&gt;
+               </textarea>
+               <h2>3. CSS3 Border Image</h2>
+               <p>Another exciting feature in CSS 3 is the ability to swap out a border with an image. 
+                   The property border-image allows you to specify an image to display instead of a plain solid-colored 
+                   border.</p>
+                <h3>CSS</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;
+                #col{border-image:url(border_image.png) 100 100 100 100 round round; border-width: 10px;}&lt;
+                /div&gt;
+               </textarea>
+               <h3>HTML</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;&lt;div id=&quot;col&quot;&gt;my content&lt;/div&gt;&lt;/div&gt;
+               </textarea>
+               <h2>4. CSS3 Box Shadow</h2>
+               <p>A box shadow allows you to create a drop shadow for an element. Usually this effect is achieved using 
+                   a repeated image around the element. However, with the property box-shadow this can be achieved by
+                    writing a single line of CSS code.</p>
+                <h3>CSS</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;
+                .shadow{ background-color: #EEEEEE; box-shadow:3px 3px 3px 2px #797979; height: 50px; width: 100px; padding: 5px;
+                }&lt;/div&gt;
+               </textarea>
+               <h3>HTML</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;shadow&quot;&gt;  my content &lt;/div&gt;&lt;/div&gt;
+               </textarea>
+               <h2>5. CSS3 Text Shadow</h2>
+               <p>The new text-shadow property allows you to add drop shadows to the text on a webpage. Prior to CSS 3, 
+                   this would be done by either using an image or duplicating a text element and then positioning it. 
+                   A similar property called box-shadow is also available in CSS 3.</p>
+                <h3>CSS</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;p{ text-shadow: #aaa 2px 2px 2px; }&lt;/div&gt;
+               </textarea>
+               <h3>HTML</h3>
+               <textarea cols="30" rows="10">
+                &lt;div class=&quot;code&quot;&gt;&lt;p&gt;My text is more beautiful, than a normal webfont&lt;/p&gt;&lt;/div&gt;
+               </textarea>
+               <h2>6. CSS3 Gradients</h2>
+               <p>Gradients give web designers the power to create smooth transitions between colors without having to 
+                   resort to images. CSS gradients also look great on retina displays, because they are generated on 
+                   the fly. They can be linear or radial, and can be set to repeat.</p>
+                <h3>Syntax</h3>
+                <textarea cols="30" rows="10">
+                    background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+                </textarea><br>
+                <a href="https://www.w3schools.com/css/css3_gradients.asp" target="_blank"><button>Learn More</button></a>
+                <h2>7. CSS3 Webfonts</h2>
+                <p>
+                    CSS3 enable us to embed beautiful fonts by simply including the stylesheet in one's page, 
+                    Web fonts allow Web designers to use fonts that are not installed on the user's computer.
+                </p>
+                <h3>CSS</h3>
+                <textarea cols="30" rows="10">
+                    h1{
+                        font-family: Satisfy, cursive;
+                        font-weight:normal;
+                    }
+                </textarea>
+                <h3>HTML</h3>
+               <textarea cols="30" rows="10">
+                &lt;link href=&quot;https://fonts.googleapis.com/css?family=Satisfy&quot; rel=&quot;stylesheet&quot; /&gt;
+                &lt;h1&gt;This is my pretty webfont!&lt;/h1&gt;
+               </textarea><br>
+                <a href="https://www.w3schools.com/css/css3_fonts.asp"><button>Learn More</button></a>
+                <h2>8. Border Images</h2>
+                <p>
+                    The border-image property allows you to display custom designed borders around elements. 
+                    The borders are contained in a single image (sprite), with each region of that image corresponding to 
+                    different part of the border.
+                </p>
+                <h3>CSS</h3>
+                <textarea cols="30" rows="10">
+                    p{
+                        border:30px solid transparent;
+                        border-image:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/border.png) 30 30 round;
+                    }
+                </textarea>
+                <h3>HTML</h3>
+               <textarea cols="30" rows="10">
+                &lt;p&gt;Say hello to a fancy border image!&lt;/p&gt;
+               </textarea>
+            </article>
+            <p class="date" align="right">
+            17 march : 3:10 PM
+            </p>
+            </section>
+            </div>
+    </div>
+</body>
+</html>

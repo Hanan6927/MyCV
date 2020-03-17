@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <label for="toggle" id="burger">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="myworks.html">My Works</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+    <div class="card">
+        <div class="content">
+            <section>
+            <p class="title">
+                Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element is responsive ? why ? [write your argument]
+            </p>
+            <article>
+                <p>
+                    When working on a responsive project it’s more flexible to use relative units 
+                    like em for sizing text and spacing in and around elements rather than pixels. 
+                    This is because this unit is relative to the font size of its parent element, 
+                    allowing an element’s size, spacing and text content to grow proportionally as 
+                    the font-size of parent elements change.
+                </p>
+                <p>
+                    em also lends itself to the relative unit rem (‘root em’) for the creation of responsive text. 
+                    This is because rem is based on the root element html (and not on the respective element like the 
+                    em unit). The effect of this is that the font size adjusts in direct relation to the complete root 
+                    element content, which is particularly advantageous when using em for a complex nesting of elements.
+                </p>
+                <p>
+                    Using em and rem units gives us flexibility in our designs, and the ability to scale elements up 
+                    and down, instead of being stuck with fixed sizes. We can use this flexibility to make our designs 
+                    easier to adjust during development, more responsive, and to allow browser users to control the 
+                    overall scale of sites for maximum readability.
+                </p>
+            </article>
+            <p class="date" align="right">
+            17 march : 3:10 PM
+            </p>
+            </section>
+            </div>
+    </div>
+</body>
+</html>

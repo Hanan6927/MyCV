@@ -8,162 +8,166 @@
 
     <style>
         .container{
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
-    grid-gap: 15px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-.container .question_cards{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 0 auto;
-    background: #fff;
-    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
-}
-.container .question_cards .face{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container .question_cards .face.face1{
-    box-sizing: border-box;
-    padding: 20px;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+            grid-gap: 15px;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .container .question_cards{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+        }
+        .container .question_cards .face{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .question_cards .face.face1{
+            box-sizing: border-box;
+            padding: 20px;
 
-}
-.container .question_cards .face.face1 h2{
-    margin: 0;
-    padding: 0;
+        }
+        .container .question_cards .face.face1 h2{
+            margin: 0;
+            padding: 0;
 
-}
-.container .question_cards .face.face2{
-    background: #111;
-    transition: 0.5s;
+        }
+        .container .question_cards .face.face2{
+            background: #111;
+            transition: 0.5s;
 
-}
-.container .question_cards:nth-child(1) .face.face2{
-    background: linear-gradient(45deg, #3503ad,#f7308c);
-}
-.container .question_cards:nth-child(2) .face.face2{
-    background: linear-gradient(45deg, #a73215,#bedb15);
-}
-.container .question_cards:nth-child(3) .face.face2{
-    background: linear-gradient(45deg, #2f98c9,#f730ab);
-}
-.container .question_cards:hover .face.face2{
-    height: 60px;
+        }
+        .container .question_cards:nth-child(1) .face.face2{
+            background: linear-gradient(45deg, #3503ad,#f7308c);
+        }
+        .container .question_cards:nth-child(2) .face.face2{
+            background: linear-gradient(45deg, #a73215,#bedb15);
+        }
+        .container .question_cards:nth-child(3) .face.face2{
+            background: linear-gradient(45deg, #2f98c9,#f730ab);
+        }
+        .container .question_cards:hover .face.face2{
+            height: 60px;
 
-}
-.container .question_cards .face.face2::before{
-    content: "";
-    position: absolute;
-    background: #111;
-    transition: 0.5s;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, .1);
+        }
+        .container .question_cards .face.face2::before{
+            content: "";
+            position: absolute;
+            background: #111;
+            transition: 0.5s;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, .1);
 
-}
-.container .question_cards .face.face2 h2{
-    margin: 0;
-    padding: 0;
-    font-size: 10em;
-    color: #fff;
-    transition: 0.5s;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-}
-.container .question_cards:hover .face.face2 h2{
-    font-size: 2em;
-}
-button{
-    background: none;
-    color:black;
-    width: 155px;
-    height: 80px;
-    border: 1px solid #338033;
-    font-size: 18px;
-    border-radius: 4px;
-    transition: .6s;
-    overflow: hidden;
-}
-button:focus{
-    outline: none;
-}
-button::before{
-    content: "";
-    display: block;
-    position: absolute;
-    background: rgba(255, 255, 255, .5);
-    width: 60px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: .5s;
-    filter: blur(30px);
-    transform: translateX(130px) skewX(-15deg); 
-}
-button::after{
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: rgba(255, 255, 255, .2);
-    width: 30px;
-    height: 100%;
-    left: 30px;
-    top: 0;
-    opacity: 0;
-    filter: blur(30px);
-    transform: translate(-100px) scaleX(-15deg);
-}
-button:hover{
-    background: #338033;
-    cursor: pointer;
-}
-button:hover::before{
-    transform: translateX(300px) skewX(-15deg);
-    opacity: .6;
-    transition: .7s;
-}
-button:hover::after{
-    transform: translateX(300px) skewX(-15deg);
-    opacity: 1;
-    transition: .7s;
-}
+        }
+        .container .question_cards .face.face2 h2{
+            margin: 0;
+            padding: 0;
+            font-size: 10em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        }
+        .container .question_cards:hover .face.face2 h2{
+            font-size: 2em;
+        }
+        button{
+            background: none;
+            color:black;
+            width: 155px;
+            height: 80px;
+            border: 1px solid #338033;
+            font-size: 18px;
+            border-radius: 4px;
+            transition: .6s;
+            overflow: hidden;
+        }
+        button:focus{
+            outline: none;
+        }
+        button::before{
+            content: "";
+            display: block;
+            position: absolute;
+            background: rgba(255, 255, 255, .5);
+            width: 60px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: .5s;
+            filter: blur(30px);
+            transform: translateX(130px) skewX(-15deg); 
+        }
+        button::after{
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: rgba(255, 255, 255, .2);
+            width: 30px;
+            height: 100%;
+            left: 30px;
+            top: 0;
+            opacity: 0;
+            filter: blur(30px);
+            transform: translate(-100px) scaleX(-15deg);
+        }
+        button:hover{
+            background: #338033;
+            cursor: pointer;
+        }
+        button:hover::before{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: .6;
+            transition: .7s;
+        }
+        button:hover::after{
+            transform: translateX(300px) skewX(-15deg);
+            opacity: 1;
+            transition: .7s;
+        }
 
 
     </style>
 </head>
 <body>
     
-    <div class="card">
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="myworks.html">My Works</a>
-                    </li>
-                </ul>
+            <nav class="nav">
+                <label for="toggle" id="burger">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="myworks.html">My Works</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -213,7 +217,7 @@ button:hover::after{
                  </div>
             </div>
         </div>
-    </div>
+    
 
 </body>
 </html>

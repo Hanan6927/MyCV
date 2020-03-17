@@ -8,79 +8,71 @@
     <link rel="stylesheet" href="./assets/css.css">
 </head>
 <body>
-    <hr>
-    <p align="center" class="p1">
-        <a href="index.html"><img src="./assets/images/logo.jpg" alt="logo" align="left" width="50px" 
-            height="40px"></a>
-        <a href="index.html" style="text-decoration: none;">Home</a> |
-        <a href="contact.html" style="text-decoration: none;">Contact</a> |
-        <a href="gallery.html" style="text-decoration: none;">Gallery</a>
-        </p>
-    <hr>
-    <a href="gallery.html"><img src="./assets/images/me2.jpg" alt="Hanan Miftah Profile Image" 
-                    width="200" height="200"></a>
-    <h1>Hanan Miftah</h1>
-    <h3>Student, Addis Ababa Institute of Technology</h3>
-    <p>Hi there!</p>
-    <p title="A little introduction about me">I am Hanan Miftah, second year software engineering student in Addis Ababa 
-        institute of technology. Experienced with all stages of the 
-        development cycle for dynamic web projects. Well-versed in 
-        numerous programming languages including HTML5, PHP OOP, 
-        JavaScript, CSS, MySQL. </p>
-        <hr>
-    <table>
-        <tr>
-            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.218523478972!2d38.75900921445855!3d9.043821091247562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f68908aad97%3A0x6c67d2e35cbb4d62!2s6%20Kilo!5e0!3m2!1sen!2set!4v1583146393296!5m2!1sen!2set" 
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
-            <td><table>
-                <form action="mailto:se.hanan.miftah@gmail.com" method="POST" enctype="utf-8">
-                    <th><h3>Contact me with the following information</h3></th>
-                    <tr>
-                        <td><label for="name">First Name: </label>&nbsp;</td>
-                        <td><input type="text" name="fName" id="fName" required pattern="^[A-Za-z]+$"><br><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="name">Last Name</label>&nbsp;</td>
-                        <td><input type="text" name="lName" id="fName" required pattern="^[A-Za-z]+$"><br><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email: </label>&nbsp;</td>
-                        <td><input type="email" name="email" id="email" required><br><br></td>
-                    </tr>
-                    <tr>
-                        <td>Country: </td>&nbsp;
-                        <td>
-                            <select name="country">
-                                <option value="asia">Asia</option>
-                                <option value="africa">Africa</option>
-                                <option value="america">America</option>
-                            </select><br><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label>Password: </label>
-                        </td>
-                        <td>
-                            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="your password should have 
-                            lowercase letters, numbers and atleast 8 character"><br><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Leave your comment here..<br></td>
-                        <td><textarea name="comment" id="comment" cols="30" rows="10"></textarea><br></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="Submit"><br></td>
-                    </tr>
-                    
-                </form>
-            </table></td>
-        </tr>
-    </table>
-    <hr>
-    <p align="center">Developed By Hanan Miftah @copy;2020</p>
-    <hr>
-
+  
+        <header>
+            <nav class="nav">
+                <label for="toggle" id="burger">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="myworks.html">My Works</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container1">
+            <div style="flex: 1;">
+                <a href="gallery.html"><img src="./assets/images/me2.jpg" alt="Hanan Miftah Profile Image" 
+                    width="200" height="200" style="float: left; margin-right: 20px; border-radius: 50%;"></a>
+            </div>
+            <div style="flex:6">
+                <h1>Hanan Miftah</h1>
+        <h3>Student, Addis Ababa Institute of Technology</h3>
+        <p>Hi there!</p>
+        <p title="A little introduction about me" class="p1">I am Hanan Miftah, second year software engineering student in Addis Ababa 
+            institute of technology. Experienced with all stages of the 
+            development cycle for dynamic web projects. Well-versed in 
+            numerous programming languages including HTML5, PHP OOP, 
+            JavaScript, CSS, MySQL. </p>
+            </div>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.218523478972!2d38.75900921445855!3d9.043821091247562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f68908aad97%3A0x6c67d2e35cbb4d62!2s6%20Kilo!5e0!3m2!1sen!2set!4v1583146393296!5m2!1sen!2set" 
+                    width="600" height="450" frameborder="0" style="border:0; float: left; margin:10px 10px 0 0 ;" allowfullscreen=""></iframe>
+            <form action="mailto:se.hanan.miftah@gmail.com" method="POST" enctype="utf-8" >
+                <h3>Contact me with the following information</h3>
+                    <label for="name">First Name: </label>
+                    <input type="text" name="fName" id="fName" required pattern="^[A-Za-z]+$"><br><br>
+                    <label for="name">Last Name: </label><label>
+                    <input type="text" name="lName" id="fName" required pattern="^[A-Za-z]+$"><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required><br><br>
+                    <lable>Country:</lable>
+                        <select name="country" style="margin-left: 50px;">
+                            <option value="asia">Asia</option>
+                            <option value="africa">Africa</option>
+                            <option value="america">America</option>
+                        </select><br><br>
+                    <label>Password: &nbsp;</label>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="your password should have 
+                        lowercase letters, numbers and atleast 8 character"><br><br>
+                    <label> your comment here..</label><br>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Submit"><br>    
+            </form>
+        <p align="center" class="r">Developed By Hanan Miftah @copy;2020</p>
 </body>
 </html>
