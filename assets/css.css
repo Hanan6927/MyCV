@@ -68,40 +68,7 @@ input[type="submit"]{
     height: 20px;
     top: 5px;
 }
-@media (max-width: 500px){
-    #burger{
-        display: block;
-        cursor: pointer;
-    }
-    .menu{
-        width: 100%;
-        display: none;
-    }
-    .menu li{ 
-        margin-right: 10px;
-        display:block;
-        text-align: center;
-        border-bottom: 1px solid #EAEBED;
-    }
-    #toggle:checked + .menu{
-        display: block;
-    }
-    iframe{
-        margin: 10px;
-        width: 90%;
-    }
-    form{
-        width: 90%;
-        clear: left;
-    }
-    #form_t{
-        width: 90%;
-    }
-    .heading{
-        font-size: 1rem;
-    }
-   
-}
+
 form{
     border-bottom: 1px solid black;
 }
@@ -173,4 +140,38 @@ article{
 }
 .content{
     margin-left: 5px;
+}
+@media (max-width: 500px){
+    #burger{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        width: 100%;
+        display: none;
+    }
+    .menu li{ 
+        margin-right: 10px;
+        display:block;
+        text-align: center;
+        border-bottom: 1px solid #EAEBED;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+    iframe{
+        margin: 10px;
+        width: 90%;
+    }
+    form{
+        width: 90%;
+        clear: left;
+    }
+    #form_t{
+        width: 90%;
+    }
+    .heading{
+        display: none;
+    }
+   
 }
